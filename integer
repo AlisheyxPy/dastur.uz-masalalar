@@ -1,0 +1,232 @@
+#masalalar 22.06.2022 yozilgan
+
+                    #integer
+# integer-1
+sm = int(input("santimetr kiriting: "))
+metr = sm // 100
+smq = sm % 100
+print(f"{sm} sm=  {metr}-metr {smq} santimetr")
+
+
+
+# integer-2
+kg =int(input("kg kirit: "))
+to = kg //1000
+toq = kg %1000
+print(f"{kg} kilogram = {to} tonna {toq} kg")
+
+
+
+# integer-3
+bayt =int(input("bayt kiriting: "))
+kb = bayt // 1024
+kbq =bayt % 1024
+print(f"{bayt} bayt = {kb} kilobayt {kbq} bayt")
+
+
+
+# integer-4
+a ,b = map(int,input("a > b.  son kirit a b: ").split())
+javob = a // b
+print(javob ,"martta")
+
+
+
+# integer-5
+a ,b = map(int,input("a > b.  son kirit a b: ").split())
+javob = a // b
+javobq = a % b
+print(javob ,"martta",javobq,"qoldiq")
+
+
+
+# integer-6
+raqam =int(input("son kirit: "))
+onlik = raqam // 10 * 10
+birlik = raqam % 10
+print(f"{raqam} raqamida  {onlik} o`nlik  {birlik} birlik")
+
+
+
+# integer-7
+son1 = int(input("son kirit: "))
+qoshish = (son1 // 10)+(son1 % 10)
+print(qoshish)
+
+
+
+# integer-8
+son2 = int(input("son kirit: "))
+teskari = son2 % 10 * 10 + son2 // 10
+print(teskari)
+
+
+
+# integer-9
+son3 = int(input("son kirit: "))
+yuz = son3 // 100
+print("yuzlar xonasidagi raqami = ",yuz)
+
+
+# integer-10
+son4 = int(input("son kirit: "))
+birlik = son4 % 10
+onlik = (son4 % 100 ) // 10 
+print(f"raqam: {son4} \nbirliklar xonasidagi raqami {birlik}  \no'nliklar xonasidagi raqami  {onlik}")
+
+
+
+# integer-11
+son5 = int(input("son kirit: "))
+yigindi = (son5 // 100) +(son5 % 100 // 10)+(son5 % 10) 
+print(f"son: {son5}  \nyig`indi = {yigindi}")
+
+
+
+#integer -12 
+a =input("uch xonali son kiriting teskarisiga chiqarib beraman: ")
+print(a[-1::-1])
+
+
+
+#integer-13
+son =int(input("uch xonali son kiriting: "))
+javob =son // 100
+print(((son % 100)*10)+javob)
+
+
+
+#integer-14
+son =int(input("uch xonali son kiriting: "))
+javob = son % 10
+print(javob*100+(son //10))
+
+
+#integer-15
+a = int(input("uch xonali son kiriting: "))
+yuz = ((a % 100) - (a % 10))*10
+on = a // 100 * 10
+bir = a % 10
+obshi = yuz + on + bir
+print(obshi)
+
+
+
+#integer-16
+a = int(input('uch xonali son kiriting: '))
+yuz = (a // 100)*100
+on = (a %10)*10
+bir = (a % 100) // 10
+yig = yuz + on + bir
+print(yig)
+
+
+
+#integer17
+a = int(input('son kiriting: '))
+x = a // 100
+xq =a % 100
+print("yuzliklar orasidagi soni",x,"\nqoldiq",xq)
+
+
+
+#integer18
+a = int(input('son kiriting: '))
+x = a // 1000
+xq =a % 1000
+print("yuzliklar orasidagi soni",x,"\nqoldiq",xq)
+
+
+
+#integer19
+a = int(input('sekund kiriting: '))
+minu = a //60
+print(a,"sekund  ==",minu,"minut")
+
+
+
+#integer20
+a = int(input('sekund kiriting: '))
+soat = a //3600
+print(a,"sekund  ==",soat,"soat")
+
+
+
+#integer21
+a = int(input('sekund kiriting: '))
+minu = a //60
+sekund = a % 60
+print(a,"sekund  ==",minu,"minut",sekund,"sekund")
+
+
+#integer22
+a = int(input('sekund kiriting: '))
+soat = a //3600
+secund = a % 3600
+print(f"{a} sekund == {soat} soat  {secund} sekund")
+
+
+
+#integer23
+a = int(input('sekund kiriting: '))
+soat = a //3600
+minut = (a % 3600) // 60
+secund = a % 60
+print(f"{a} sekund == {soat} soat  {minut} minut {secund} sekund")
+
+
+
+#integer-24
+kun =int(input("shu yildagi 1 365 gacha bulgan sana kirit qaysi hafta ekanini topaman: "))
+hafta = kun % 7
+a = ['yakshanba','dushanba','seshanba','chorshanba','payshanba','jumma','shanba']
+print(a[hafta])
+
+
+
+#integer-25
+kun =int(input("shu yildagi 1 365 gacha bulgan sana kirit qaysi hafta ekanini topaman: "))
+hafta = kun % 7
+a = ['yakshanba','dushanba','seshanba','chorshanba','payshanba','jumma','shanba']
+print(a[hafta+3])
+
+
+#integer-26
+kun =int(input("shu yildagi 1 365 gacha bulgan sana kirit qaysi hafta ekanini topaman: "))
+hafta = kun % 7
+a = ['dushanba','seshanba','chorshanba','payshanba','jumma','shanba','yakshanba']
+print(a[hafta])
+
+
+
+#integer-27
+kun =int(input("shu yildagi 1 365 gacha bulgan sana kirit qaysi hafta ekanini topaman: "))
+hafta = kun % 7
+a = ['dushanba','seshanba','chorshanba','payshanba','jumma','shanba','yakshanba']
+print(a[hafta-2])
+
+
+
+#integer-28
+n = int(input("(hafta kunlari soni 1-7 (yaksanba ==1)  n="))
+kun =int(input("shu yildagi 1 365 gacha bulgan sana kirit qaysi hafta ekanini topaman: "))
+hafta = kun % 7
+a = ['yakshanba','dushanba','seshanba','chorshanba','payshanba','jumma','shanba',]
+print(a[hafta+(n-2)])
+
+
+
+#integer29
+a ,b ,c = map(int,input("a,b,c son kirit:").split())
+ab = a*b 
+ca =c**2
+javob = ab // ca
+javq = ab % ca
+print(f"a b to'gri to'rt burchakning ichida  c ning kvadrati \n{javob} butun hamda {javq} qoldiq")
+
+
+#integer30
+n = int(input("yil kiriting: "))
+print((n // 100)+1,"- yuz yillik")
+
+
