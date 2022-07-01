@@ -1,0 +1,180 @@
+#begin-1
+print("""masala-1
+P=a * 4""")
+a = int(input("a ="))
+print("p=",a*4)
+
+#----------------------------------------------------------------------
+
+# #begin-2
+print(""" masala-2     
+S=a2""")
+b = int(input("a ="))
+print("S=",b*b)
+
+#----------------------------------------------------------------------
+
+# #begin-3
+print(""" masala-3     
+S=a*b 
+p=2*(a+b)""")
+sona = int(input("a ="))
+sonb = int(input("b ="))
+print("S=",sona*sonb )
+print("p=",2*(sona+sonb))
+
+#----------------------------------------------------------------------
+
+#begin-4
+print("""masala-4 
+l=p*d
+p =3.14""")
+d=int(input("d="))
+print("L=",d*3.14)
+
+#----------------------------------------------------------------------
+
+# begin-5
+print("""masala -5
+V =a3
+S=6*a2""")
+a = int(input("a="))
+print("""V =""",a**3,"\nS=",6*(a**2))
+
+#----------------------------------------------------------------------
+
+#begin-6
+print("""masla-6
+V=a*b*c
+S=2*(a*b+b*c+a*c)""")
+a=int(input("a = "))
+b=int(input("b = "))
+c=int(input("c = "))
+print("V=",a*b*c,"S=",2*(a*b+b*c+a*c))
+
+#----------------------------------------------------------------------
+
+#begin-7
+print("""masala-7
+L=2*p*R
+S=p*R2""")
+r = int(input("r = "))
+print("L=",2*3.14*r,"\nS =",3.14*(r**2))
+
+#----------------------------------------------------------------------
+
+#begin-8
+print("""masala-8
+(a+b)/2""")
+a,b = map(int,input("a,b son kiriting").split())
+print((a+b)/2)
+
+#----------------------------------------------------------------------
+
+#begin-9
+print("""masala-9
+ildiz(a*b) """)
+a,b = map(int,input("a,b son kiriting").split())
+print("javob: ",(a*b)**(1/2))
+
+#----------------------------------------------------------------------
+
+#begin-10
+print("""masala-10
+nolga teng bulmagan ikkita son kiritilsiz ularning yig'indisi ayirmasi ko'paytmasi bulinmasi va har birining kvadrati chiqarilsin""")
+a,b = map(int,input("a,b son kiriting").split())
+print(f"qo'shilsa = {a+b}  kvadrati= {(a+b)**2}\nayirmasi= {a-b}  kvadrati= {(a-b)**2}\nko'paytmasi = {a*b}  kvadrati= {(a*b)**2}\nbo'linmasi = {a/b}  kvadrati= {(a/b)**2}")
+      
+#----------------------------------------------------------------------
+
+#begin-11
+print("""masala-11
+nolga teng bulmagan ikkita son kiritilsin ularning yig'indisi ko'paytmasi va moduli aniqlansin""")
+a,b = map(int,input("a,b son kiriting").split())
+print(f"ko'paytmasi = {a*b} \nyig'indisi = {a+b} ") 
+
+#----------------------------------------------------------------------
+
+#begin-12
+print("""masala-12
+C=ildiz(a2+b2)
+P=a+b+c""")
+a,b = map(int,input("a,b son kiriting").split())
+c=(a**2+b**2)**(1/2)
+p = a+b+c
+print(f"C= {c} \nP ={p}")
+
+#----------------------------------------------------------------------
+
+#begin-13
+print("""masala-13
+r1=r2=(r1>r2)
+s1 = p*r1 yuzasi
+s2 = p*r2 yuzasi
+s3 = p*(r1 - r2) ayirmasi
+aniqlansin""")
+r1,r2 = map(int,input("r1,r2 son kiriting").split())
+p =3.14
+s1 = p*r1
+s2 = p*r2
+s3 = p*(r1-r2)
+print(f"S1= {s1}\nS2= {s2}\nS3= {s3}")
+
+#----------------------------------------------------------------------
+
+#begin-14
+print("""masala-14
+L=2*p*r
+S=p*r2""",end="")
+r =int(input("r = "))
+p=3.14
+L = 2*p*r
+S = p*(r**2)
+print("\nL= ",L," \nS=",S)
+
+#----------------------------------------------------------------------
+
+#begin-15
+print("""masala-15
+L = 2*p*r
+S = p*r2 """,end="")
+r = int(input("r = "))
+p =3.14
+L =2*p*r
+S =p*(r**2) 
+print(f"\nL = {L} \nS = {S}")
+
+#----------------------------------------------------------------------
+
+#begin-16
+print("""masala-16
+x1  x2  sonlar orasidagi masofa aniqlansin""",end="")
+x1,x2 = map(int,input("x1,x2 =  ").split())
+km = x1 -x2
+print(f"masofa {km}")
+
+#----------------------------------------------------------------------
+
+#begin-17
+print("""masala-17
+AC  BC uzunligini,
+kesmalar uzunligining yig'indisini topilsin""")
+a,b,c = map(int,input("a  b  c =  ").split())
+ac = a-c
+bc = b-c
+plus =ac+bc
+print(f"AC ning uzunligi = {ac}\nBC ning uzunligi = {bc}\nuzunliklarning yig'indisi = {plus}")
+
+#----------------------------------------------------------------------
+
+#begin-18
+print("""masala-18
+A C B nuqtalar berilgan A va B orasida C nuqta joylashgan
+AC va BC ning uzunligining ko`paytmasi ?   """)
+a,c,b = map(int,input("A C B = ").split())
+ac = a-c
+bc = b-c
+kopayturuv = ac * bc
+print(f"AC ning uzunligi = {ac}\nBC ning uzunligi = {bc}\nularning uzunligini ko`paytmasi = { kopayturuv}")
+
+
