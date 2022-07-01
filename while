@@ -1,0 +1,317 @@
+#while-1
+a,b =map(int,input().split())
+while a>b :
+    a-=b
+print(a)
+
+#----------------------------------------------------------------------
+
+#while-2
+a,b =map(int,input().split())
+s=0
+while a>=b:
+    a-=b
+    s+=1
+print(s)
+
+#----------------------------------------------------------------------
+
+#while-3
+a,b =map(int,input().split())
+s=0
+while a>=b:
+    a-=b
+    s+=1
+print(s,a,'qoldiq')
+
+#----------------------------------------------------------------------
+
+#while-4
+n = int(input())
+s = 1
+a = True
+while a:
+    s *= 3
+    if n==s:
+        print('3 ning darajasi')
+        break
+    if s > n :
+        a = False
+        print("3 ning darajasi emas")
+
+#----------------------------------------------------------------------
+
+#while-5
+a=0
+k = 1
+n = int(input())
+while n>0:
+    k*=2
+    n-=k
+    a+=1
+print(f"2 ning {a} darajasi {2**a}") 
+
+#----------------------------------------------------------------------
+
+#while-7
+n = int(input())
+x = 0
+while n > x:
+    x+=1
+    if n < x**2:
+        print(x)
+        break
+     
+#----------------------------------------------------------------------
+
+#while-8
+n = int(input())
+x = 0
+while n > x:
+    x+=1
+    if n < x**2:
+        print(x-1)
+        break        
+
+#----------------------------------------------------------------------
+
+#while-9
+n=int(input())
+s = 1
+while True:
+    s*=3
+    if s > n:
+        print(s)
+        break
+
+#----------------------------------------------------------------------
+
+#while-10
+n=int(input())
+s = 1
+while True:
+    s*=3
+    if s >= n:
+        print(s//3)
+        break
+
+#----------------------------------------------------------------------
+
+#while-11
+n = int(input())
+k = 1
+f = 1
+while True :
+    k +=1
+    f += k
+    if f >= n:
+        break
+print(f,k)
+    
+#----------------------------------------------------------------------
+
+#while-12
+n = int(input())
+k = 1
+f = 1
+while True :
+    k +=1
+    f += k
+    if f >= n:
+        f -= k
+        k -=1
+        break
+print(f,k)
+
+#----------------------------------------------------------------------
+
+#while-13
+n = int(input())
+k = 1
+s =0
+while True :
+    s +=1
+    k += 1/s
+    if k >= n :
+        break
+print(k , s)
+
+#----------------------------------------------------------------------
+
+#while-14
+n = int(input())
+k = 1
+s =0
+while True :
+    s +=1
+    k += 1/s
+    if k >= n :
+        k -=1/s
+        s -=1
+        break
+print(k , s)
+
+#----------------------------------------------------------------------
+
+#while-15
+s = int(input("Bankka qo'yadiga summa :"))
+x =s+s
+p = int(input("Bank foizi: "))
+oy = 0
+while s < x :
+    oy += 1
+    s +=(s/100)*p
+print(oy,int(s))
+
+#----------------------------------------------------------------------
+
+#while-16
+a = 10
+p = int(input("foiz: "))
+kun = 0
+while a < 200:
+    kun +=1
+    a +=(a/100)*p
+print(kun,a)
+
+#----------------------------------------------------------------------
+
+#while-17
+x=0
+n,m = map(int,input().split())
+while n>=m:
+    n-=m
+    x+=1
+print(f"{x} {n}-qoldiq")
+
+#----------------------------------------------------------------------
+
+#while-18
+n = int(input())
+while n:
+    n-=1
+    print(n)
+        
+#----------------------------------------------------------------------
+
+#while-19
+n = int(input())
+x=0
+y = 0
+while n > x:
+    x+=1
+    y+=x
+print(y,x)
+
+#----------------------------------------------------------------------
+
+#while-20    
+n = input()
+while True:
+    if '2' in n:
+        print("yes")
+        break
+    else:
+        print('no')
+        break
+
+
+#----------------------------------------------------------------------
+
+#while-21
+n = int(input())
+v =0
+while v<n:
+    v +=1
+    if v%2!=0:
+        print(v)
+       
+
+#---------------------------------------------------------------------- 
+    
+#while-23
+x =0
+a,b = map(int,input().split())
+while True:
+    x+=1
+    if x %a ==0 and x %b ==0:
+        print(x)
+        break
+
+#----------------------------------------------------------------------
+
+#while-24
+a = int(input())
+x = 1
+y = 1
+while x <=a or y <= a :
+    x += y
+    y +=x
+    if a == x or a == y:
+        print("this fib number")
+        break
+else:
+    print("this not fib number")
+ 
+#----------------------------------------------------------------------
+
+#while-25
+n = int(input())
+x=1
+y=1
+while True:
+    x+=y
+    y+=x
+    if x > n:
+        print(x)
+        break
+    elif y > n:
+        print(y)
+        break
+    
+#----------------------------------------------------------------------
+
+#while-26
+n = int(input())
+x=1
+y=1
+while True:
+    x+=y
+    if x > n :
+        print(y,x)
+        break
+    y+=x
+    if y > n :
+        print(x,y)
+        break
+    
+#----------------------------------------------------------------------
+
+#while-27
+n = int(input())
+x=1
+y=1
+d =0
+while True:
+    if x < n:
+        x+=y
+        d +=1
+        if x > n:
+            break
+    if y < n:
+        y+=x
+        d +=1
+        if y > n:
+            break
+print(d)
+    
+#----------------------------------------------------------------------
+
+#while-30
+a,b,c = map(int,input().split())
+f=0
+ab = a*b
+while ab:
+    ab-=c
+    f+=1
+print(f)
