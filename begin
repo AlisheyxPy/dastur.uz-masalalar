@@ -172,7 +172,7 @@ print("""masala-18
 A C B nuqtalar berilgan A va B orasida C nuqta joylashgan
 AC va BC ning uzunligining ko`paytmasi ?   """)
 a,c,b = map(int,input("A C B = ").split())
-ac = a-c
+ac = c-a
 bc = b-c
 kopayturuv = ac * bc
 print(f"AC ning uzunligi = {ac}\nBC ning uzunligi = {bc}\nularning uzunligini ko`paytmasi = { kopayturuv}")
